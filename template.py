@@ -12,15 +12,15 @@ list_of_files = [
     'src/pipeline/__init__.py',
     'src/pipeline/training_pipeline.py',
     'src/pipeline/prediction_pipeline.py',
-    'src/utils/__init__.py'
+    'src/utils/__init__.py',
     'src/utils/utils.py',
-    'src/logger/loggin.py',
-    'src/exception/exception',
+    'src/logger/loggin.py',  # Typo in 'logging.py'
+    'src/exception/exception',  # Missing file extension
     'test/unit/__init__.py',
-    'test/intiegration/__init__.py',
-    'init_shetup.sh',
+    'test/integration/__init__.py',  # Typo in 'integration'
+    'init_setup.sh',  # Typo in 'init_setup.sh'
     'requirements.txt',
-    'requirements_dev.txt'
+    'requirements_dev.txt',  # Missing comma after 'requirements_dev.txt'
     'setup.py',
     'setup.cfg',
     'pyproject.toml',
@@ -28,14 +28,15 @@ list_of_files = [
     'experiment/experiments.ipynb'
 ]
 
-
 for filepath in list_of_files:
     filepath = Path(filepath)
     filedir, filename = os.path.split(filepath)
     if filedir != "":
         os.makedirs(filedir, exist_ok=True)
-        
-    
-    if (not os.path.exists(filename)) or (os.path.getsize(filename) == 0):
-        with open(filename, 'w') as f:
-            pass
+
+    # Check if the file doesn't exist or is empty
+    if not filepath.exists() or filepath.stat().st_size == 0:
+        # Open the file with 'w' mode to write content to it
+        with open(filepath, 'w') as f:
+            # Write some content to the file (e.g., 'Hello, world!')
+            f.write("Hello, world!")
