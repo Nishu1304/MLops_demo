@@ -15,7 +15,7 @@ list_of_files = [
     'src/utils/__init__.py',
     'src/utils/utils.py',
     'src/logger/loggin.py',  # Typo in 'logging.py'
-    'src/exception/exception',  # Missing file extension
+    'src/exception/exception.py',  # Missing file extension
     'test/unit/__init__.py',
     'test/integration/__init__.py',  # Typo in 'integration'
     'init_setup.sh',  # Typo in 'init_setup.sh'
