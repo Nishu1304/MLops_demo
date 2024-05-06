@@ -14,7 +14,7 @@ from pathlib import Path
 
 @dataclass
 class DataIngestionConfig:
-    raw_data_path: str = os.path.join("artifacts", "raw.csv")
+    raw_data_path: str = os.path.join("artifacts", "sample_submission.csv")
     train_data_path: str = os.path.join("artifacts", "train.csv")
     test_data_path: str = os.path.join("artifacts", "test.csv")
 
@@ -26,8 +26,7 @@ class DataIngestion:
     def initiate_data_ingestion(self):
         logging.info("data ingestion started")
         try:
-            data = pd.read_csv(
-                "https://raw.githubusercontent.com/sunnysavita10/fsdsmendtoend/main/notebooks/data/gemstone.csv")
+            data = pd.read_csv("https://raw.githubusercontent.com/Nishu1304/MLops_demo/main/artifacts/train.csv")
             logging.info(" reading a df")
 
             os.makedirs(os.path.dirname(os.path.join(self.ingestion_config.raw_data_path)), exist_ok=True)
@@ -53,7 +52,7 @@ class DataIngestion:
 
 
         except Exception as e:
-            logging.info()
+            logging.info('None')
             raise customexception(e, sys)
 
 
