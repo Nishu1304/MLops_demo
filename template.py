@@ -16,8 +16,10 @@ list_of_files = [
     'src/utils/utils.py',
     'src/logger/loggin.py',  # Typo in 'logging.py'
     'src/exception/exception.py',  # Missing file extension
-    'test/unit/__init__.py',
-    'test/integration/__init__.py',  # Typo in 'integration'
+    'tests/unit/__init__.py',
+
+
+    'tests/integration/__init__.py',  # Typo in 'integration'
     'init_setup.sh',  # Typo in 'init_setup.sh'
     'requirements.txt',
     'requirements_dev.txt',  # Missing comma after 'requirements_dev.txt'
