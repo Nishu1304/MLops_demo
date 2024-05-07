@@ -12,8 +12,8 @@ def get_requirements(file_path:str)->List[str]:
         if HYPEN_E_DOT in requirements:
             requirements.remove(HYPEN_E_DOT)
 
-    return requirements"""
-
+    return requirements
+"""
 setup(
     name='Dimond_Price_Prediction',
     version='0.0.1',

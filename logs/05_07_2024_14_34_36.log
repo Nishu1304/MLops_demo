@@ -1,0 +1,22 @@
+[2024-05-07 14:34:39,900] 96 werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://192.168.1.9:8000
+[2024-05-07 14:34:39,900] 96 werkzeug - INFO - [33mPress CTRL+C to quit[0m
+[2024-05-07 14:34:42,807] 96 werkzeug - INFO - 127.0.0.1 - - [07/May/2024 14:34:42] "GET / HTTP/1.1" 200 -
+[2024-05-07 14:34:48,334] 96 werkzeug - INFO - 127.0.0.1 - - [07/May/2024 14:34:48] "GET /predict HTTP/1.1" 200 -
+[2024-05-07 14:35:08,198] 1414 app - ERROR - Exception on /predict [POST]
+Traceback (most recent call last):
+  File "C:\Users\nisha\PycharmProjects\pythonProject1\venv\Lib\site-packages\flask\app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nisha\PycharmProjects\pythonProject1\venv\Lib\site-packages\flask\app.py", line 1487, in full_dispatch_request
+    return self.finalize_request(rv)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nisha\PycharmProjects\pythonProject1\venv\Lib\site-packages\flask\app.py", line 1506, in finalize_request
+    response = self.make_response(rv)
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nisha\PycharmProjects\pythonProject1\venv\Lib\site-packages\flask\app.py", line 1801, in make_response
+    raise TypeError(
+TypeError: The view function for 'predict_datapoint' did not return a valid response. The function either returned None or ended without a return statement.
+[2024-05-07 14:35:08,203] 96 werkzeug - INFO - 127.0.0.1 - - [07/May/2024 14:35:08] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -
