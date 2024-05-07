@@ -1,2 +1,14 @@
-<h1>Welcome To MLops Demo project</h1>
-<h2>This is Nishanka's first hand in experience in MLops</h2>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Welcome To MLops Demo project</title>
+</head>
+<body>
+    <h1>Welcome To MLops Demo project</h1>
+    <h2>This is Nishanka's first hand in experience in MLops</h2>
+    <!-- Add a button to navigate to the predict page -->
+    <form action="{{ url_for('predict_datapoint') }}">
+        <button type="submit">Predict Datapoint</button>
+    </form>
+</body>
+</html>
