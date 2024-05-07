@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/nisha/PycharmProjects/pythonProject1/Blackcoffer/MLOps_Projects/MLops_demo/src/pipeline/mlruns/0/8e15c5de7392404fa7c56232763f318b/artifacts
+end_time: 1715070548640
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 8e15c5de7392404fa7c56232763f318b
+run_name: abrasive-stag-680
+run_uuid: 8e15c5de7392404fa7c56232763f318b
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1715070533764
+status: 3
+tags: []
+user_id: nisha
