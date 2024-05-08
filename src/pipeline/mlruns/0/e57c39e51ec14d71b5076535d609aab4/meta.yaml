@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/nisha/PycharmProjects/pythonProject1/Blackcoffer/MLOps_Projects/MLops_demo/src/pipeline/mlruns/0/e57c39e51ec14d71b5076535d609aab4/artifacts
+end_time: 1715158638744
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: e57c39e51ec14d71b5076535d609aab4
+run_name: legendary-mink-836
+run_uuid: e57c39e51ec14d71b5076535d609aab4
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1715158603866
+status: 3
+tags: []
+user_id: nisha

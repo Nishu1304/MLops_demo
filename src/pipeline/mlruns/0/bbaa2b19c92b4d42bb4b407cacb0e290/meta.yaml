@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/nisha/PycharmProjects/pythonProject1/Blackcoffer/MLOps_Projects/MLops_demo/src/pipeline/mlruns/0/bbaa2b19c92b4d42bb4b407cacb0e290/artifacts
+end_time: 1715154154560
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: bbaa2b19c92b4d42bb4b407cacb0e290
+run_name: stylish-koi-635
+run_uuid: bbaa2b19c92b4d42bb4b407cacb0e290
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1715154136154
+status: 3
+tags: []
+user_id: nisha

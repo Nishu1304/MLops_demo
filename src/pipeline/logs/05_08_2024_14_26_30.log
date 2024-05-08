@@ -1,0 +1,31 @@
+[2024-05-08 14:26:35,374] 27 root - INFO - data ingestion started
+[2024-05-08 14:26:39,552] 30 root - INFO -  reading a df
+[2024-05-08 14:26:40,640] 34 root - INFO -  i have saved the raw dataset in artifact folder
+[2024-05-08 14:26:40,640] 36 root - INFO - here i have performed train test split
+[2024-05-08 14:26:40,691] 39 root - INFO - train test split completed
+[2024-05-08 14:26:41,676] 44 root - INFO - data ingestion part completed
+[2024-05-08 14:26:41,899] 85 root - INFO - read train and test data complete
+[2024-05-08 14:26:41,909] 86 root - INFO - Train Dataframe Head : 
+       id  carat        cut color clarity  depth  table     x     y     z  price
+0   38575   0.31      Ideal     I     VS2   61.8   55.0  4.33  4.35  2.68    503
+1  106958   0.70  Very Good     H     SI1   61.8   56.0  5.65  5.69  3.51   2247
+2   72217   0.31      Ideal     G    VVS1   62.1   55.0  4.34  4.36  2.70    789
+3  152101   0.41    Premium     D     SI1   62.3   59.0  4.73  4.75  2.95    791
+4  128232   1.06    Premium     F    VVS1   61.1   60.0  6.62  6.56  4.03  10808
+[2024-05-08 14:26:41,915] 87 root - INFO - Test Dataframe Head : 
+       id  carat      cut color clarity  depth  table     x     y     z  price
+0   51732   0.54    Ideal     E     VS2   60.2   57.0  5.22  5.24  3.16   1838
+1    5589   0.35    Ideal     G      IF   61.8   56.0  4.55  4.53  2.81   1063
+2   85935   2.01    Ideal     G     SI1   59.3   57.0  8.09  8.15  4.82  18055
+3  106981   0.42    Ideal     F    VVS2   62.2   57.0  4.79  4.81  2.99   1131
+4  146681   1.01  Premium     E     VS2   62.3   59.0  6.34  6.37  3.96   5983
+[2024-05-08 14:26:41,916] 30 root - INFO - Data Transformation initiated
+[2024-05-08 14:26:41,916] 41 root - INFO - Pipeline Initiated
+[2024-05-08 14:26:42,267] 104 root - INFO - Applying preprocessing object on training and testing datasets.
+[2024-05-08 14:26:42,278] 114 root - INFO - preprocessing pickle file saved
+[2024-05-08 14:26:42,286] 26 root - INFO - Splitting Dependent and Independent variables from train and test data
+[2024-05-08 14:26:43,484] 44 root - INFO - Model Report : {'LinearRegression': 0.93646206826835, 'Lasso': 0.9364430108731447, 'Ridge': 0.9364614231768111, 'Elasticnet': 0.8540818491800259}
+[2024-05-08 14:26:43,484] 57 root - INFO - Best Model Found , Model Name : LinearRegression , R2 Score : 0.93646206826835
+[2024-05-08 14:26:43,485] 16 root - INFO - evaluation started
+[2024-05-08 14:26:43,492] 34 root - INFO - model has register
+[2024-05-08 14:26:43,921] 22 root - INFO - evaluation metrics captured
